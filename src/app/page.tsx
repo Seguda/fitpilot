@@ -2,6 +2,7 @@ import {
   FAQSection,
   FinalCTA,
   Footer,
+  ExploreInterestsSection,
   HeroSection,
   LeadCaptureSection,
   LocalTrustSection,
@@ -14,33 +15,43 @@ import {
   SolutionSection,
   StudioPartnerSection,
   WhatYouGetSection,
+  GrowthTrackingSection,
 } from "@/components/landing";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-neutral-50 text-neutral-900">
+    <div className="min-h-screen bg-[#fafaf9] text-stone-900">
       <Navbar />
-      <main className="mx-auto flex max-w-6xl flex-col gap-20 px-4 pb-24 pt-16 sm:px-6 sm:pt-20 lg:px-8 lg:gap-24 lg:pt-24">
-        <HeroSection />
-        <div className="space-y-20 lg:space-y-24">
+      <main>
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <HeroSection />
+        </div>
+
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <ProblemSection />
+          <ExploreInterestsSection />
+        </div>
+
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <WhyNotDIYSection />
           <SolutionSection />
           <WhatYouGetSection />
         </div>
-        <div className="space-y-20 rounded-3xl border border-neutral-200 bg-white/60 p-6 shadow-sm sm:p-10 lg:space-y-24">
+
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <SampleReportSection />
+          <GrowthTrackingSection />
           <SocialProofSection />
           <PricingSection />
         </div>
-        <div className="space-y-12 py-8 sm:py-12">
+
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <LeadCaptureSection />
-        </div>
-        <div className="space-y-20 lg:space-y-24">
           <StudioPartnerSection />
           <LocalTrustSection />
         </div>
-        <div className="space-y-14 border-t border-neutral-200 pt-14 lg:space-y-16 lg:pt-16">
+
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <FAQSection />
           <FinalCTA />
         </div>

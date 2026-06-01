@@ -11,10 +11,12 @@ export { LeadForm as LeadCaptureSection } from "./LeadForm";
 
 export {
   HeroSection,
+  ExploreInterestsSection,
   ProblemSection,
   WhyNotDIYSection,
   SolutionSection,
   WhatYouGetSection,
+  GrowthTrackingSection,
   SampleReportSection,
   SocialProofSection,
   PricingSection,

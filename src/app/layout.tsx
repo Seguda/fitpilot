@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FitPilot",
   description:
-    "FitPilot helps families find the right activity with structured trial feedback and a clear recommendation.",
+    "Help your child find the right activity — with clarity and confidence.",
 };
 
 export default function RootLayout({
@@ -24,9 +24,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
