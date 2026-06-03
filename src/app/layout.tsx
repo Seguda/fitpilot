@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FitPilot",
   description:
-    "Help your child find the right activity — with clarity and confidence.",
+    "Discover what your child truly enjoys — meaningful insights for confident growth.",
 };
 
 export default function RootLayout({

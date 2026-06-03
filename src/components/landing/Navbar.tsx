@@ -54,7 +54,7 @@ export function Navbar() {
           onClick={() => handleNavClick(SECTION_IDS.LEAD)}
           className={`hidden ${styles.btnPrimary} !min-h-[40px] !px-5 !py-2 md:inline-flex`}
         >
-          Start Discovery Journey
+          Request Early Access
         </button>
 
         <button
@@ -86,7 +86,7 @@ export function Navbar() {
               onClick={() => handleNavClick(SECTION_IDS.LEAD)}
               className={`mt-2 ${styles.btnPrimary}`}
             >
-              Start Discovery Journey
+              Request Early Access
             </button>
           </div>
         </nav>

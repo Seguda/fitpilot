@@ -1,22 +1,16 @@
-/** Shared editorial image overlay + frame classes */
+/** Premium layout — 24px+ radius, soft shadows */
 
 export const imageFrame =
-  "overflow-hidden rounded-[1.35rem] bg-stone-200 ring-1 ring-black/[0.06] sm:rounded-[1.5rem] lg:rounded-[1.65rem]";
+  "overflow-hidden rounded-3xl bg-stone-100 ring-1 ring-stone-200/80";
 
 export const imageShadow =
-  "shadow-[0_20px_50px_-12px_rgba(28,25,23,0.16)]";
+  "shadow-[0_24px_48px_-16px_rgba(28,25,23,0.12)]";
 
-export const overlayEditorial =
-  "pointer-events-none absolute inset-0 bg-gradient-to-t from-stone-950/60 via-stone-950/15 to-stone-950/[0.03]";
+export const cardSurface =
+  "rounded-3xl bg-white shadow-[0_8px_30px_-12px_rgba(28,25,23,0.08)] ring-1 ring-stone-200/70";
 
-export const overlayEditorialLight =
-  "pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-950/35 via-transparent to-transparent";
-
-export const overlayEditorialDark =
-  "pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-950/55 via-neutral-950/15 to-neutral-950/5";
-
-export const overlayWarm =
-  "pointer-events-none absolute inset-0 bg-gradient-to-br from-amber-950/10 via-transparent to-stone-950/25 mix-blend-multiply";
+export const sectionShell =
+  "scroll-mt-28 py-20 sm:py-28 lg:py-36";
 
 export const imageInsetRing =
-  "pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10";
+  "pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl";
