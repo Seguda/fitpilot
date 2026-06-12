@@ -11,9 +11,10 @@ export {
   HeroSection,
   ProblemSection,
   SolutionSection,
+  WhatYouReceiveSection,
   InsightReportSection,
-  GrowthTrackingSection,
   WhyParentsSection,
+  FounderNoteSection,
   LeadCaptureSection,
   FAQSection,
 } from "./sections";

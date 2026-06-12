@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { NAV_ITEMS, SECTION_IDS } from "./constants";
+import { PRIMARY_CTA } from "./visuals";
 import { scrollToSection } from "./utils";
 import { styles } from "./ui/styles";
 
@@ -34,7 +35,7 @@ export function Navbar() {
         </button>
 
         <nav
-          className="hidden items-center gap-8 text-sm text-stone-600 md:flex"
+          className="hidden items-center gap-4 text-sm text-stone-600 md:flex lg:gap-6"
           aria-label="Main"
         >
           {NAV_ITEMS.map((item) => (
@@ -54,7 +55,7 @@ export function Navbar() {
           onClick={() => handleNavClick(SECTION_IDS.LEAD)}
           className={`hidden ${styles.btnPrimary} !min-h-[40px] !px-5 !py-2 md:inline-flex`}
         >
-          Request Early Access
+          {PRIMARY_CTA}
         </button>
 
         <button
@@ -86,7 +87,7 @@ export function Navbar() {
               onClick={() => handleNavClick(SECTION_IDS.LEAD)}
               className={`mt-2 ${styles.btnPrimary}`}
             >
-              Request Early Access
+              {PRIMARY_CTA}
             </button>
           </div>
         </nav>

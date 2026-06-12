@@ -2,13 +2,14 @@ import {
   FAQSection,
   FinalCTA,
   Footer,
-  GrowthTrackingSection,
   HeroSection,
   InsightReportSection,
+  FounderNoteSection,
   LeadCaptureSection,
   Navbar,
   ProblemSection,
   SolutionSection,
+  WhatYouReceiveSection,
   WhyParentsSection,
 } from "@/components/landing";
 
@@ -20,8 +21,9 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <SolutionSection />
+        <WhatYouReceiveSection />
+        <FounderNoteSection />
         <InsightReportSection />
-        <GrowthTrackingSection />
         <WhyParentsSection />
         <LeadCaptureSection />
         <FinalCTA />

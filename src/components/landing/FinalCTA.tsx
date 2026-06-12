@@ -3,6 +3,7 @@
 import { SECTION_IDS } from "./constants";
 import { scrollToSection } from "./utils";
 import { cardSurface } from "./ui/imageStyles";
+import { FINAL_CTA, PRIMARY_CTA } from "./visuals";
 
 export function FinalCTA() {
   return (
@@ -18,18 +19,20 @@ export function FinalCTA() {
           id="final-cta-heading"
           className="mx-auto max-w-2xl text-balance text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl lg:leading-[1.08]"
         >
-          Help Your Child Discover What Lights Them Up
+          {FINAL_CTA.title}
         </h2>
         <p className="mx-auto mt-6 max-w-lg text-lg text-white/80">
-          Start with discovery. Continue with confidence.
+          {FINAL_CTA.subtitle}
         </p>
-        <button
-          type="button"
-          onClick={() => scrollToSection(SECTION_IDS.LEAD)}
-          className="mt-10 min-h-[52px] rounded-full bg-white px-10 py-3.5 text-base font-semibold text-stone-900 shadow-lg transition hover:bg-stone-50"
-        >
-          Start Discovery Journey
-        </button>
+        <div className="mt-10 flex flex-col items-center justify-center">
+          <button
+            type="button"
+            onClick={() => scrollToSection(SECTION_IDS.LEAD)}
+            className="min-h-[52px] rounded-full bg-white px-10 py-3.5 text-base font-semibold text-stone-900 shadow-lg transition hover:bg-stone-50"
+          >
+            {PRIMARY_CTA}
+          </button>
+        </div>
       </div>
     </section>
   );
