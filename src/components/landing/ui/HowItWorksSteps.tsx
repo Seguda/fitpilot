@@ -30,19 +30,6 @@ const icons: Record<
       />
     </svg>
   ),
-  patterns: (
-    <svg viewBox="0 0 24 24" fill="none" className={iconClass} aria-hidden>
-      <path
-        d="M4 16c2-4 4-6 8-6s6 2 8 6"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-      />
-      <circle cx="8" cy="10" r="1.5" fill="currentColor" />
-      <circle cx="12" cy="7" r="1.5" fill="currentColor" />
-      <circle cx="16" cy="10" r="1.5" fill="currentColor" />
-    </svg>
-  ),
   report: (
     <svg viewBox="0 0 24 24" fill="none" className={iconClass} aria-hidden>
       <rect
